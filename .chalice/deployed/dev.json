@@ -1,0 +1,23 @@
+{
+  "schema_version": "2.0",
+  "resources": [
+    {
+      "role_name": "sent-dev",
+      "role_arn": "arn:aws:iam::860263526934:role/sent-dev",
+      "name": "default-role",
+      "resource_type": "iam_role"
+    },
+    {
+      "lambda_arn": "arn:aws:lambda:us-east-1:860263526934:function:sent-dev",
+      "name": "api_handler",
+      "resource_type": "lambda_function"
+    },
+    {
+      "name": "rest_api",
+      "rest_api_id": "0jg9hsuj1k",
+      "rest_api_url": "https://0jg9hsuj1k.execute-api.us-east-1.amazonaws.com/api/",
+      "resource_type": "rest_api"
+    }
+  ],
+  "backend": "api"
+}
