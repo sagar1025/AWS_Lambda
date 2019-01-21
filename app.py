@@ -5,7 +5,7 @@ import json
 
 app = Chalice(app_name='sent')
 
-@app.route('/articleScore', methods=['POST'])
+@app.route('/articleScore', methods=['POST'], cors=True)
 def index():
     request = app.current_request.json_body
     score = 0.0
