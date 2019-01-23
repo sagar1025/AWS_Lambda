@@ -5,7 +5,7 @@ import json
 
 app = Chalice(app_name='sent')
 
-@app.route('/articleScore', methods=['POST'])
+@app.route('/articleScore', methods=['POST'], cors=True)
 def index():
     request = app.current_request.json_body
     score = 0.0
@@ -13,16 +13,14 @@ def index():
     index = 0
     for x in request['articles']:
         comprehend = boto3.client(service_name='comprehend', region_name='us-east-1')
-        text = x['title']
-        response = json.dumps(comprehend.detect_sentiment(Text=text, LanguageCode='en'), sort_keys=True, indent=4)
-        print(response)
-        jsonresp = json.loads(response)
+        description = x['description']
+        response = comprehend.detect_sentiment(Text=description, LanguageCode='en')
 
-        print(jsonresp['Sentiment'])
-        print(jsonresp['SentimentScore']['Positive'])
-        if jsonresp['Sentiment'] == "NEUTRAL":
+        #print(response['Sentiment'])
+        #print(response['SentimentScore']['Positive'])
+        if response['Sentiment'] == "NEUTRAL":
             validArticle[index] = x
-        elif jsonresp['SentimentScore']['Neutral'] >= 0.45:
+        elif response['SentimentScore']['Neutral'] >= 0.48:
             validArticle[index] = x
 
         index += 1

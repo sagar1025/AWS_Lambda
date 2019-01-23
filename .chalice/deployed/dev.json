@@ -14,8 +14,8 @@
     },
     {
       "name": "rest_api",
-      "rest_api_id": "0jg9hsuj1k",
-      "rest_api_url": "https://0jg9hsuj1k.execute-api.us-east-1.amazonaws.com/api/",
+      "rest_api_id": "n11l60wgbg",
+      "rest_api_url": "https://n11l60wgbg.execute-api.us-east-1.amazonaws.com/api/",
       "resource_type": "rest_api"
     }
   ],
