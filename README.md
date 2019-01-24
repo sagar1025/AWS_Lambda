@@ -11,7 +11,7 @@
 `chalice local`  
 this will run on localhost  
 ### To deploy   
-`chalice deploy`  
+`chalice deploy --no-autogen-policy`  
 
 #### By default the name of the project and the API that is set up is called sent, and the environment to which it is deployed is called dev
 

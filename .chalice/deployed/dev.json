@@ -2,9 +2,9 @@
   "schema_version": "2.0",
   "resources": [
     {
-      "role_name": "sent-dev",
-      "role_arn": "arn:aws:iam::860263526934:role/sent-dev",
-      "name": "default-role",
+      "role_name": "sent-dev-api_handler",
+      "role_arn": "arn:aws:iam::860263526934:role/sent-dev-api_handler",
+      "name": "api_handler_role",
       "resource_type": "iam_role"
     },
     {
@@ -14,8 +14,8 @@
     },
     {
       "name": "rest_api",
-      "rest_api_id": "n11l60wgbg",
-      "rest_api_url": "https://n11l60wgbg.execute-api.us-east-1.amazonaws.com/api/",
+      "rest_api_id": "p63mcnb7z4",
+      "rest_api_url": "https://p63mcnb7z4.execute-api.us-east-1.amazonaws.com/api/",
       "resource_type": "rest_api"
     }
   ],
