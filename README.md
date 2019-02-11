@@ -19,38 +19,43 @@ this will run on localhost
 
 ### Sample request  
 `
-{
-"articles": [
-{
-	"title": "homes got fancier this year at CES",
-"description": "The smart home market is still up for grabs Unlike PCs or phones, which for the most part are dominated by a few well known names  smart home gadgets can come from wherever and whatever brand  As long as they perform functions you cant get from the big na",
-"content": "The smart home market is still up for grabs. Unlike PCs or phones which for the most part are dominated by a few well known names smart home gadgets can come from wherever and whatever brand As long as they perform functions you cant get from the big nam"
-},
-{
-	"title": "Netflix sued by Choose Your Own Adventure publishers over Black Mirror: Bandersnatch",
-"description": "Chooseco, publisher of the Choose Your Own Adventure series, has filed a trademark infringement lawsuit against Netflix for referencing its books in the interactive Black Mirror episode Bandersnatch."
-},
-{
-	"title": "Polished Putin, tempestuous Trump are a contrast in foreign policy styles",
-"description": "Last years Helsinki summit still seems to be paying dividends for Russian President Vladimir Putin."
-}
-]}
+[  
+   {  
+      "articleTitle":"Game of Thrones Ser Davos Actor Liam Cunningham Says Season 8 Is an Honorable Ending   IGN",
+      "description":"Game of Thrones actor Liam Cunningham reflects on the final season at the TCA winter press tour",
+      "content":"The final season is almost here... \r\nBy David GriffinWith the highly-anticipated final season of HBO's Game of Throne fast approaching, Davos Seaworth actor Liam Cunningham spoke with IGN at the TCA winter press tour about the decision to end the series after… ",
+      "articleUrl":"https://www.ign.com/articles/2019/02/11/game-of-thrones-ser-davos-actor-liam-cunningham-says-season-8-is-an-honorable-ending?abthid=5c60d5e73739c3747d001138",
+      "author":"David Griffin",
+      "urlToImage":"https://assets1.ignimgs.com/2019/02/11/serdavos-1549845420952_1280w.jpg"
+   },
+   {  
+      "articleTitle":"Tips and Tricks  Tom Clancys The Division 2 Wiki Guide  IGN",
+      "description":"Tom Clancys The Division 2 at IGN walkthroughs items maps video tips and strategies",
+      "content":"IGN has the tips and tricks, strategies, and secrets you need to succeed in Tom Clancy's The Division 2.",
+      "articleUrl":"https://www.ign.com/wikis/the-division-2/Tips_and_Tricks",
+      "author":null,
+      "urlToImage":"https://oystatic.ignimgs.com/src/core/img/widgets/global/page/ign-logo-100x100.jpg"
+   }
+]
 `  
 ### Response  
 `
-{
-    "0": {
-        "content": "The smart home market is still up for grabs. Unlike PCs or phones which for the most part are dominated by a few well known names smart home gadgets can come from wherever and whatever brand As long as they perform functions you cant get from the big nam",
-        "description": "The smart home market is still up for grabs Unlike PCs or phones, which for the most part are dominated by a few well known names  smart home gadgets can come from wherever and whatever brand  As long as they perform functions you cant get from the big na",
-        "title": "homes got fancier this year at CES"
+[
+    {
+        "description": "Game of Thrones actor Liam Cunningham reflects on the final season at the TCA winter press tour",
+        "author": "David Griffin",
+        "content": "The final season is almost here... \r\nBy David GriffinWith the highly-anticipated final season of HBO's Game of Throne fast approaching, Davos Seaworth actor Liam Cunningham spoke with IGN at the TCA winter press tour about the decision to end the series after… ",
+        "urlToImage": "https://assets1.ignimgs.com/2019/02/11/serdavos-1549845420952_1280w.jpg",
+        "articleTitle": "Game of Thrones Ser Davos Actor Liam Cunningham Says Season 8 Is an Honorable Ending   IGN",
+        "articleUrl": "https://www.ign.com/articles/2019/02/11/game-of-thrones-ser-davos-actor-liam-cunningham-says-season-8-is-an-honorable-ending?abthid=5c60d5e73739c3747d001138"
     },
-    "1": {
-        "description": "Chooseco, publisher of the Choose Your Own Adventure series, has filed a trademark infringement lawsuit against Netflix for referencing its books in the interactive Black Mirror episode Bandersnatch.",
-        "title": "Netflix sued by Choose Your Own Adventure publishers over Black Mirror: Bandersnatch"
-    },
-    "2": {
-        "description": "Last years Helsinki summit still seems to be paying dividends for Russian President Vladimir Putin.",
-        "title": "Polished Putin, tempestuous Trump are a contrast in foreign policy styles"
+    {
+        "description": "Tom Clancys The Division 2 at IGN walkthroughs items maps video tips and strategies",
+        "author": null,
+        "content": "IGN has the tips and tricks, strategies, and secrets you need to succeed in Tom Clancy's The Division 2.",
+        "urlToImage": "https://oystatic.ignimgs.com/src/core/img/widgets/global/page/ign-logo-100x100.jpg",
+        "articleTitle": "Tips and Tricks  Tom Clancys The Division 2 Wiki Guide  IGN",
+        "articleUrl": "https://www.ign.com/wikis/the-division-2/Tips_and_Tricks"
     }
-}
+]
 `
